@@ -1,0 +1,12 @@
+name: Ubuntu VPS #02
+on: { workflow_dispatch: {} }
+
+jobs:
+  vps02:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Start SSH session (tmate) - #02
+        uses: mxschmitt/action-tmate@v3
+        with:
+          limit-access-to-actor: false
